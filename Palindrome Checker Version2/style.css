@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(226, 218, 218);
+}
+.container {
+  background-color: whitesmoke;
+  color: rgb(59, 57, 57);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 30rem;
+  height: 28rem;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+#test-button,
+#reset-button {
+  font-size: 18px;
+  padding: 5px;
+  min-width: 15rem;
+  border-radius: 7px;
+  background-color: rgb(203, 196, 196);
+  color: rgb(90, 82, 82);
+  border: 1px solid transparent;
+  margin-bottom: 1.2rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+#test-button:hover {
+  background-color: rgb(121, 118, 118);
+  color: whitesmoke;
+  cursor: pointer;
+}
+#reset-button:hover {
+  background-color: rgb(121, 118, 118);
+  color: red;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+#user-input {
+  background-color: rgb(203, 196, 196);
+  color: rgb(111, 103, 103);
+  text-align: center;
+  width: 27rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 0.5rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+#result-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 5rem;
+}
+#text-result {
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+h3 {
+  margin-top: 0.3rem;
+}
