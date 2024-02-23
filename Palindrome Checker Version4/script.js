@@ -1,6 +1,6 @@
 let result = document.getElementById("result");
 let userInput = document.getElementById("user-input");
-result.innerHTML = ".......";
+result.innerHTML = "...........................";
 let testButton = document.getElementById("test-button");
 let resetButton = document.getElementById("reset-button");
 
@@ -24,14 +24,13 @@ function palindromeChecker() {
     }, 1500);
     return;
   }
-
+  console.log(`Expression to test is: '${userInput.value}'`);
   elementToTest = userInput.value.toLowerCase().toString().split("");
   let formattedExpression = "";
 
   for (let i = 0; i < elementToTest.length; i++) {
     let leftItem = elementToTest[i];
     let rightItem = elementToTest[elementToTest.length - i - 1];
-
     console.log(`Current iteration number is: ${i}`);
     console.log(`Checked element from left side is : ${leftItem}`);
     console.log(`Checked element from right side is : ${rightItem}`);
@@ -48,18 +47,22 @@ function palindromeChecker() {
 
   if (isPalindrome) {
     console.log(`Expression: ${elementToTest.join("")}. IS a palindrome`);
-    result.innerHTML = `Expression: '${formattedExpression}'   IS a Palindrome!`;
+    result.innerHTML = `Expression:   ${formattedExpression} ,  ${
+      !isPalindrome ? "" : '<span class="green-mark">  is</span>'
+    } a Palindrome !`;
   } else {
     console.log(`Expression: ${elementToTest.join("")}. IS NOT a palindrome`);
-    result.innerHTML = `Expression:  '${formattedExpression}',   IS NOT a Palindrome!`;
+    result.innerHTML = `Expression:  '${formattedExpression}', is ${
+      isPalindrome ? "" : '<span class="red-mark">NOT</span>'
+    }" a Palindrome !`;
   }
+  isPalindrome = true;
+  console.log("=====================================");
 }
 
 function resetApp() {
   isPalindrome = true;
-  result.innerHTML = ".......";
+  result.innerHTML = "...........................";
   userInput.value = "";
   result.classList.remove("red-mark", "green-mark");
 }
-
-console.log("=====================================");
