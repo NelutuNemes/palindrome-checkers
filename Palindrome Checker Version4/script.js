@@ -54,7 +54,7 @@ function palindromeChecker() {
     console.log(`Expression: ${elementToTest.join("")}. IS NOT a palindrome`);
     result.innerHTML = `Expression:  '${formattedExpression}', is ${
       isPalindrome ? "" : '<span class="red-mark">NOT</span>'
-    }" a Palindrome !`;
+    } a Palindrome !`;
   }
   isPalindrome = true;
   console.log("=====================================");
