@@ -4,10 +4,11 @@ This repository contains different implementations of a Palindrome Checker in HT
 
 Each approach is organized in a separate folder:
 
-- [Version1 - Palindrome Checker](/Version1/README.md)
-- [Version2 - Palindrome Checker](/Version2/README.md)
-- [Version3 - Palindrome Checker](/Version3/README.md)
-- [Version4 - Palindrome Checker](/Version4/README.md)
+- [Version 1 - Palindrome Checker](/Palindrome%20Checker%20Version1/README.md)
+- [Version 2 - Palindrome Checker](/Palindrome%20Checker%20Version2/README.md)
+- [Version 3 - Palindrome Checker](/Palindrome%20Checker%20Version3/README.md)
+- [Version 4 - Palindrome Checker](/Palindrome%20Checker%20Version4/README.md)
+
 
 ## How to Use
 
